@@ -55,12 +55,12 @@ function Footer() {
         <div className="footer-column">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#academics">Academics</a></li>
-            <li><a href="#staff">Staff Directory</a></li>
-            <li><a href="#campus">Campus Life</a></li>
-            <li><a href="#placements">Placements</a></li>
-            <li><a href="#alumni">Alumni</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/academics">Academics</a></li>
+            <li><a href="/staff">Staff Directory</a></li>
+            <li><a href="/campus">Campus Life</a></li>
+            <li><a href="/placements">Placements</a></li>
+            <li><a href="/alumni">Alumni</a></li>
           </ul>
         </div>
 
