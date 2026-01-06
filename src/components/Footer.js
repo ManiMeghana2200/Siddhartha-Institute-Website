@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from "react";
 import "./Footer.css";
 import {
@@ -16,11 +18,41 @@ function Footer() {
         <div className="footer-column">
           <h3>Social Links</h3>
           <div className="social-icons">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaLinkedinIn /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaYoutube /></a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube />
+            </a>
           </div>
 
           <h3>Reach Us</h3>
@@ -32,7 +64,9 @@ function Footer() {
           <p>
             <strong>Phone:</strong> +91 1234567890 <br />
             <strong>Email:</strong>{" "}
-            <a href="mailto:info@siddharthait.ac.in">info@siddharthait.ac.in</a>
+            <a href="mailto:info@siddharthait.ac.in">
+              info@siddharthait.ac.in
+            </a>
           </p>
         </div>
 
@@ -55,12 +89,24 @@ function Footer() {
         <div className="footer-column">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/about">About</a></li>
-            <li><a href="/academics">Academics</a></li>
-            <li><a href="/staff">Staff Directory</a></li>
-            <li><a href="/campus">Campus Life</a></li>
-            <li><a href="/placements">Placements</a></li>
-            <li><a href="/alumni">Alumni</a></li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#academics">Academics</a>
+            </li>
+            <li>
+              <a href="#staff">Staff Directory</a>
+            </li>
+            <li>
+              <a href="#campus">Campus Life</a>
+            </li>
+            <li>
+              <a href="#placements">Placements</a>
+            </li>
+            <li>
+              <a href="#alumni">Alumni</a>
+            </li>
           </ul>
         </div>
 
@@ -68,12 +114,24 @@ function Footer() {
         <div className="footer-column">
           <h3>Students Corner</h3>
           <ul>
-            <li><a href="#">Exam Cell</a></li>
-            <li><a href="#">ERP Login</a></li>
-            <li><a href="#">ECAP Login</a></li>
-            <li><a href="#">Exam Timetable</a></li>
-            <li><a href="#">Latest News</a></li>
-            <li><a href="#">WES – Online Verification</a></li>
+            <li>
+              <a href="#examcell">Exam Cell</a>
+            </li>
+            <li>
+              <a href="#erp">ERP Login</a>
+            </li>
+            <li>
+              <a href="#ecap">ECAP Login</a>
+            </li>
+            <li>
+              <a href="#timetable">Exam Timetable</a>
+            </li>
+            <li>
+              <a href="#news">Latest News</a>
+            </li>
+            <li>
+              <a href="#verification">WES – Online Verification</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -85,7 +143,7 @@ function Footer() {
           Sciences. All rights reserved.
         </p>
         <p>
-          Designed & Developed by <span> Web Team</span>
+          Designed & Developed by <span>Web Team</span>
         </p>
       </div>
     </footer>
