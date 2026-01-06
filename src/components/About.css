@@ -1,0 +1,75 @@
+/* ========================= */
+/* ABOUT US SECTION (NO IMAGE) */
+/* ========================= */
+
+.about-section {
+  background-color: #ffffff;
+  padding: 80px 120px;
+  color: #222;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.about-content p {
+  font-size: 17px;
+  line-height: 28px;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* MISSION AND VISION BLOCKS */
+.about-mission,
+.about-vision {
+  margin-top: 30px;
+  background: #f8f9fa;
+  padding: 25px 30px;
+  border-left: 5px solid var(--secondary-color);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.about-mission h3,
+.about-vision h3 {
+  color: var(--primary-color);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.about-mission p,
+.about-vision p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .about-mission,
+  .about-vision {
+    padding: 20px;
+  }
+}

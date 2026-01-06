@@ -1,0 +1,78 @@
+.campus-life {
+  padding: 80px 100px;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.campus-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.campus-header p {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* GRID LAYOUT */
+.campus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* CAMPUS CARD */
+.campus-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.campus-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.campus-icon {
+  font-size: 42px;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.campus-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.campus-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .campus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .campus-life {
+    padding: 60px 30px;
+  }
+
+  .campus-grid {
+    grid-template-columns: 1fr;
+  }
+}

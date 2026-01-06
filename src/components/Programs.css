@@ -1,0 +1,147 @@
+/* ========================= */
+/* OUR PROGRAMS SECTION */
+/* ========================= */
+
+.programs-section {
+  background-color: #f8f9fa;
+  padding: 80px 120px;
+  color: #222;
+  text-align: center;
+  position: relative;
+}
+
+/* HEADER */
+.programs-header {
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.programs-header h2 {
+  font-size: 36px;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.programs-header p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #444;
+}
+
+/* MAIN CONTAINER */
+.programs-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SCROLL AREA */
+.programs-scroll {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 20px 10px;
+}
+
+.programs-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* CARD */
+.program-card {
+  flex: 0 0 320px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 35px 25px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ICON */
+.program-icon {
+  font-size: 45px;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.program-card h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.program-card p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #555;
+}
+
+/* ARROWS */
+.arrow-btn {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.arrow-btn.left {
+  left: 0; /* attach to left edge of scroll container */
+}
+
+.arrow-btn.right {
+  right: 0; /* attach to right edge */
+}
+
+.arrow-btn:hover {
+  background-color: #d35400;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .programs-section {
+    padding: 60px 20px;
+  }
+
+  .programs-header h2 {
+    font-size: 28px;
+  }
+
+  .programs-header p {
+    font-size: 16px;
+  }
+
+  .arrow-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .program-card {
+    flex: 0 0 280px;
+  }
+}

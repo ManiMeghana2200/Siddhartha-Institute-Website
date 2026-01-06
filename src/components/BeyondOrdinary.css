@@ -1,0 +1,130 @@
+/* ========================= */
+/* BEYOND ORDINARY SECTION */
+/* ========================= */
+
+.beyond-section {
+  background: #eef2f5;
+  padding: 5rem 8%;
+  text-align: center;
+  color: #023047;
+}
+
+/* HEADER */
+.beyond-header {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.beyond-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.beyond-header p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.learn-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-btn:hover {
+  background-color: #d35400;
+  transform: scale(1.05);
+}
+
+/* CARD GRID */
+.beyond-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* CARD BASE STYLE */
+.beyond-card {
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.beyond-card h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  color: inherit;
+}
+
+.beyond-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* DARK AND LIGHT VARIANTS */
+.beyond-card.dark {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.beyond-card.light {
+  background: #fff;
+  color: var(--primary-color);
+}
+
+.beyond-card.light p {
+  color: #444;
+}
+
+/* ICONS */
+.beyond-icon {
+  width: 36px;
+  height: 36px;
+}
+
+/* EXPLORE LINK */
+.explore-link {
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.explore-link:hover {
+  color: #d35400;
+  transform: translateX(4px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .beyond-header h2 {
+    font-size: 2rem;
+  }
+
+  .beyond-header p {
+    font-size: 1rem;
+  }
+
+  .beyond-card {
+    text-align: center;
+  }
+}

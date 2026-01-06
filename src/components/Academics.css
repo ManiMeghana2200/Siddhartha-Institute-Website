@@ -1,0 +1,164 @@
+/* ========================= */
+/* ACADEMICS SECTION */
+/* ========================= */
+
+.academics-section {
+  background-color: #ffffff;
+  padding: 50px 120px;
+  color: #222;
+  text-align: center;
+  position: relative;
+}
+
+/* HEADER */
+.academics-header {
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.academics-header h2 {
+  font-size: 36px;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.academics-header p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #444;
+}
+
+/* CONTAINER */
+.academics-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SCROLL AREA */
+.academics-scroll {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 20px 10px;
+}
+
+.academics-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* CARD */
+.academics-card {
+  flex: 0 0 320px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 35px 25px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.academics-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.academics-icon {
+  font-size: 45px;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.academics-card h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.academics-card p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #555;
+}
+
+/* ARROWS */
+.arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  margin: 10px;
+}
+
+.arrow-btn.left {
+  left: 0;
+}
+
+.arrow-btn.right {
+  right: 0;
+}
+
+.arrow-btn:hover {
+  background-color: #d35400;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* FOOTER NOTE */
+.academics-footer {
+  max-width: 800px;
+  margin: 50px auto 0;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .academics-section {
+    padding: 60px 20px;
+  }
+
+  .academics-header h2 {
+    font-size: 28px;
+  }
+
+  .academics-header p {
+    font-size: 16px;
+  }
+
+  .arrow-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .academics-card {
+    flex: 0 0 280px;
+  }
+
+  .academics-footer {
+    font-size: 15px;
+    padding: 20px;
+  }
+}
